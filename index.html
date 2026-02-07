@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zito Technology - Games & Applications</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Cơ bản */
+        :root {
+            --primary-color: #0071e3;
+            --bg-color: #f5f5f7;
+            --text-color: #1d1d1f;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #d2d2d7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 5%;
+            background: linear-gradient(135deg, #0071e3 0%, #00c6ff 100%);
+            color: white;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        /* Grid hiển thị Game/App */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        .card h3 { color: var(--primary-color); margin-top: 0; }
+
+        /* Footer - Thông tin công ty theo ảnh của bạn */
+        footer {
+            background-color: #1d1d1f;
+            color: #f5f5f7;
+            padding: 50px 5%;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .org-info h4 {
+            color: #ffffff;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .org-info p {
+            margin: 8px 0;
+            opacity: 0.8;
+        }
+
+        .privacy-link {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .footer-content { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ZITO TECH</div>
+        <nav>
+            <a href="#games">Games</a>
+            <a href="#apps">Ứng dụng</a>
+            <a href="privacy-policy.html">Chính sách bảo mật</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Sáng tạo Game & Ứng dụng đột phá</h1>
+        <p>Chúng tôi tập trung vào trải nghiệm người dùng và hiệu suất đỉnh cao.</p>
+    </section>
+
+    <div class="container" id="games">
+        <h2 class="section-title">Trò chơi nổi bật</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Zito Adventure</h3>
+                <p>Một trò chơi nhập vai kịch tính với đồ họa tuyệt đẹp trên nền tảng di động.</p>
+            </div>
+            <div class="card">
+                <h3>Logic Master</h3>
+                <p>Thử thách trí tuệ với hàng ngàn câu đố logic hóc búa nhất.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="apps">
+        <h2 class="section-title">Ứng dụng công cụ</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Zito Cleaner</h3>
+                <p>Tối ưu hóa bộ nhớ và tăng tốc điện thoại chỉ với một lần chạm.</p>
+            </div>
+            <div class="card">
+                <h3>Smart Finance</h3>
+                <p>Quản lý chi tiêu cá nhân một cách thông minh và an toàn.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="org-info">
+                <h4>Thông tin tổ chức</h4>
+                <p><strong>Loại đăng ký:</strong> Dun & Bradstreet</p>
+                <p><strong>Mã số DUNS:</strong> 665534449</p>
+                <p><strong>Tên tổ chức:</strong> ZITO TECHNOLOGY COMPANY LIMITED</p>
+                <p><strong>Địa chỉ:</strong> No. 273 Alley 20 Lane 01 Nguyen Duc Thuan Street, Thu Dau Mot Ward - 72300, Việt Nam (VN)</p>
+            </div>
+            <div class="org-info">
+                <h4>Hỗ trợ & Pháp lý</h4>
+                <p>Email: admin@zito.it.com</p>
+                <p><a href="privacy-policy.html" class="privacy-link">Xem Chính sách bảo mật (Privacy Policy)</a></p>
+                <p>&copy; 2024 Zito Technology Company Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JS đơn giản để cuộn mượt
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if(this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
