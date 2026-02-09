@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - ZITO TECHNOLOGY COMPANY LIMITED</title>
+    <!-- Import Google Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --text-color: #334155;
-            --bg-color: #f8fafc;
-            --card-bg: #ffffff;
-            --header-bg: #1e293b;
+            --primary-color: #3b82f6; /* Electric Blue */
+            --secondary-color: #1d4ed8;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --header-dark: #0f172a; /* Deep Navy */
         }
 
         * {
@@ -21,111 +24,149 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            padding-bottom: 50px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            padding-bottom: 60px;
         }
 
         header {
-            background-color: var(--header-bg);
+            background-color: var(--header-dark);
             color: white;
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            background-image: radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
         }
 
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
         }
 
         header p {
-            opacity: 0.9;
+            font-size: 1.1rem;
+            opacity: 0.8;
             font-weight: 300;
         }
 
         .container {
-            max-width: 900px;
-            margin: -30px auto 0;
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            max-width: 850px;
+            margin: -40px auto 0;
+            background: var(--bg-card);
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+            border: 1px solid rgba(226, 232, 240, 0.8);
         }
 
         section {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         h2 {
-            color: var(--primary-color);
-            border-left: 4px solid var(--primary-color);
-            padding-left: 15px;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
+            color: var(--header-dark);
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "";
+            width: 4px;
+            height: 24px;
+            background: var(--primary-color);
+            margin-right: 12px;
+            border-radius: 2px;
         }
 
         p {
-            margin-bottom: 15px;
-            text-align: justify;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+            font-size: 1rem;
         }
 
         ul {
-            margin-bottom: 15px;
-            padding-left: 20px;
+            margin-bottom: 20px;
+            padding-left: 25px;
+            color: var(--text-muted);
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+        }
+
+        li strong {
+            color: var(--text-main);
         }
 
         .contact-box {
-            background-color: #eff6ff;
-            border: 1px solid #bfdbfe;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 40px;
+            background-color: #f1f5f9;
+            border: 1px dashed #cbd5e1;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 50px;
+        }
+
+        .contact-box h2 {
+            margin-top: 0;
+        }
+
+        .contact-box p {
+            margin-bottom: 8px;
+            color: var(--text-main);
         }
 
         .contact-box a {
             color: var(--primary-color);
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .contact-box a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
         }
 
         footer {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 50px;
             font-size: 0.9rem;
-            color: #64748b;
+            color: var(--text-muted);
         }
 
         .back-btn {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: white;
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 25px;
+            color: #cbd5e1;
             text-decoration: none;
-            font-size: 0.9rem;
-            background: rgba(255,255,255,0.1);
-            padding: 8px 16px;
-            border-radius: 20px;
-            transition: background 0.3s;
+            font-size: 0.85rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 8px 18px;
+            border-radius: 100px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
         }
 
         .back-btn:hover {
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            transform: translateX(-5px);
         }
 
         @media (max-width: 768px) {
             .container {
-                margin: 10px;
-                padding: 20px;
+                margin: -20px 15px 0;
+                padding: 30px 20px;
             }
             header h1 {
-                font-size: 1.8rem;
+                font-size: 1.7rem;
             }
         }
     </style>
@@ -133,64 +174,67 @@
 <body>
 
     <header>
-        <a href="https://zito.it.com" class="back-btn">← Quay lại trang chủ</a>
-        <h1>Chính Sách Bảo Mật</h1>
+        <a href="https://zito.it.com" class="back-btn">
+            <svg style="width:16px;height:16px;margin-right:8px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            Back to Home
+        </a>
+        <h1>Privacy Policy</h1>
         <p>ZITO TECHNOLOGY COMPANY LIMITED</p>
     </header>
 
     <div class="container">
         <section>
-            <h2>1. Giới thiệu</h2>
-            <p>Chào mừng bạn đến với <strong>zito.it.com</strong>. Tại ZITO TECHNOLOGY COMPANY LIMITED, chúng tôi cam kết bảo vệ quyền riêng tư và dữ liệu cá nhân của bạn. Chính sách này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn khi bạn sử dụng dịch vụ của chúng tôi.</p>
+            <h2>1. Introduction</h2>
+            <p>Welcome to <strong>zito.it.com</strong>. At ZITO TECHNOLOGY COMPANY LIMITED, we are committed to protecting your privacy and personal data. This policy explains how we collect, use, and safeguard your information when you use our services.</p>
         </section>
 
         <section>
-            <h2>2. Thông tin chúng tôi thu thập</h2>
-            <p>Chúng tôi có thể thu thập các loại thông tin sau:</p>
+            <h2>2. Information We Collect</h2>
+            <p>We may collect the following types of information:</p>
             <ul>
-                <li><strong>Thông tin cá nhân:</strong> Tên, địa chỉ email, số điện thoại khi bạn đăng ký tài khoản hoặc liên hệ hỗ trợ.</li>
-                <li><strong>Dữ liệu thiết bị:</strong> Địa chỉ IP, loại trình duyệt, hệ điều hành và ID thiết bị.</li>
-                <li><strong>Dữ liệu sử dụng:</strong> Thông tin về cách bạn tương tác với trang web và các dịch vụ của chúng tôi.</li>
+                <li><strong>Personal Information:</strong> Name, email address, and phone number when you register an account or contact support.</li>
+                <li><strong>Device Data:</strong> IP address, browser type, operating system, and device ID.</li>
+                <li><strong>Usage Data:</strong> Information about how you interact with our website and services.</li>
             </ul>
         </section>
 
         <section>
-            <h2>3. Cách chúng tôi sử dụng thông tin</h2>
-            <p>Thông tin của bạn được sử dụng để:</p>
+            <h2>3. How We Use Your Information</h2>
+            <p>Your information is used to:</p>
             <ul>
-                <li>Cung cấp, duy trì và cải thiện các dịch vụ công nghệ.</li>
-                <li>Gửi các thông báo quan trọng hoặc cập nhật về dịch vụ.</li>
-                <li>Phát hiện và ngăn chặn các hành vi gian lận hoặc vi phạm bảo mật.</li>
-                <li>Hỗ trợ khách hàng và giải quyết các vấn đề kỹ thuật.</li>
+                <li>Provide, maintain, and improve our technology services.</li>
+                <li>Send important notifications or service updates.</li>
+                <li>Detect and prevent fraudulent activities or security breaches.</li>
+                <li>Provide customer support and resolve technical issues.</li>
             </ul>
         </section>
 
         <section>
-            <h2>4. Chia sẻ thông tin</h2>
-            <p>ZITO TECHNOLOGY COMPANY LIMITED không bán hoặc cho thuê thông tin cá nhân của bạn cho bên thứ ba. Chúng tôi chỉ chia sẻ thông tin khi:</p>
+            <h2>4. Information Sharing</h2>
+            <p>ZITO TECHNOLOGY COMPANY LIMITED does not sell or rent your personal information to third parties. We only share information when:</p>
             <ul>
-                <li>Có sự đồng ý rõ ràng từ phía bạn.</li>
-                <li>Yêu cầu bởi cơ quan pháp luật có thẩm quyền.</li>
-                <li>Cần thiết để bảo vệ quyền lợi hợp pháp của công ty và người dùng.</li>
+                <li>Explicit consent is provided by you.</li>
+                <li>Required by competent legal authorities.</li>
+                <li>Necessary to protect the legal rights of the company and its users.</li>
             </ul>
         </section>
 
         <section>
-            <h2>5. Bảo mật dữ liệu</h2>
-            <p>Chúng tôi áp dụng các biện pháp bảo mật kỹ thuật và tổ chức tiên tiến để đảm bảo an toàn cho dữ liệu của bạn. Tuy nhiên, không có phương thức truyền tải qua internet nào là an toàn 100%, vì vậy chúng tôi không thể đảm bảo an ninh tuyệt đối.</p>
+            <h2>5. Data Security</h2>
+            <p>We implement advanced technical and organizational security measures to ensure the safety of your data. However, please note that no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
         </section>
 
         <section>
-            <h2>6. Quyền của người dùng</h2>
-            <p>Bạn có quyền truy cập, chỉnh sửa hoặc yêu cầu xóa dữ liệu cá nhân của mình bất kỳ lúc nào. Vui lòng liên hệ với chúng tôi qua email bên dưới để thực hiện các quyền này.</p>
+            <h2>6. User Rights</h2>
+            <p>You have the right to access, correct, or request the deletion of your personal data at any time. Please contact us via the email below to exercise these rights.</p>
         </section>
 
         <div class="contact-box">
-            <h2>7. Liên hệ với chúng tôi</h2>
-            <p>Nếu bạn có bất kỳ câu hỏi nào về Chính sách Bảo mật này, vui lòng liên hệ:</p>
-            <p><strong>Công ty:</strong> ZITO TECHNOLOGY COMPANY LIMITED</p>
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions regarding this Privacy Policy, please reach out to us:</p>
+            <p><strong>Company:</strong> ZITO TECHNOLOGY COMPANY LIMITED</p>
             <p><strong>Website:</strong> <a href="https://zito.it.com">zito.it.com</a></p>
-            <p><strong>Email:</strong> <a href="mailto:admin1@zito.it.com" id="contact-email">admin1@zito.it.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:admin1@zito.it.com">admin1@zito.it.com</a></p>
         </div>
 
         <footer>
@@ -199,10 +243,10 @@
     </div>
 
     <script>
-        // Tự động cập nhật năm hiện tại ở footer
+        // Auto-update current year
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Hiệu ứng mượt mà khi cuộn trang
+        // Smooth scroll for internal links (if any)
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -211,9 +255,6 @@
                 });
             });
         });
-
-        // Log thông báo đơn giản (tùy chọn)
-        console.log("Privacy Policy loaded for ZITO TECHNOLOGY COMPANY LIMITED");
     </script>
 </body>
 </html>
